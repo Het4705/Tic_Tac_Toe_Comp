@@ -33,7 +33,7 @@ winner_announe=()=>
 } else if (player_win) {
     stop_flag=true;
     var img=document.getElementById("body");
-    img.innerHTML="<img id='respect' src='../IMAGES/respect++.png'>";
+    img.innerHTML="<img id='respect' src='/public/IMAGES/respect++.png'>";
     var win = document.getElementById("win").play();
     
 }
@@ -164,7 +164,7 @@ Wins = function () {
     for (i = 0; i < 3; i++) {
         //row
         if (index[0 + x] == 2 && (index[0 + x] == index[1 + x]) && index[2 + x] == 0) {
-            document.getElementById("btn"+(2+x)).style.backgroundImage = 'url("../IMAGES/O.png")';
+            document.getElementById("btn"+(2+x)).style.backgroundImage = 'url("/public/IMAGES/O.png")';
             document.getElementById("btn"+(2+x)).style.backgroundRepeat = "no-repeat";
             document.getElementById("btn"+(2+x)).style.backgroundPosition = "center";
             document.getElementById("btn"+(2+x)).style.value = '';
@@ -175,7 +175,7 @@ Wins = function () {
             return true;
             
         } else if (index[0 + x] == 2 && (index[0 + x] == index[2 + x]) && index[1 + x] == 0) {
-            document.getElementById("btn"+(1+x)).style.backgroundImage = 'url("../IMAGES/O.png")';
+            document.getElementById("btn"+(1+x)).style.backgroundImage = 'url("/public/IMAGES/O.png")';
             document.getElementById("btn"+(1+x)).style.backgroundRepeat = "no-repeat";
             document.getElementById("btn"+(1+x)).style.backgroundPosition = "center";
             document.getElementById("btn"+(1+x)).style.value = '';
@@ -185,7 +185,7 @@ Wins = function () {
             comp_win=true
             return true;
         } else if (index[1 + x] == 2 && (index[1 + x] == index[2 + x]) && index[0 + x] == 0) {
-            document.getElementById("btn"+(0+x)).style.backgroundImage = 'url("../IMAGES/O.png")';
+            document.getElementById("btn"+(0+x)).style.backgroundImage = 'url("/public/IMAGES/O.png")';
             document.getElementById("btn"+(0+x)).style.backgroundRepeat = "no-repeat";
             document.getElementById("btn"+(0+x)).style.backgroundPosition = "center";
             document.getElementById("btn"+(0+x)).style.value = '';
@@ -201,7 +201,7 @@ Wins = function () {
     for (j = 0; j < 3; j++) {
         if (index[0 + x] == 2 && (index[0 + x] == index[3 + x]) && index[6 + x] == 0) {
 
-            document.getElementById("btn"+(6+x)).style.backgroundImage = 'url("../IMAGES/O.png")';
+            document.getElementById("btn"+(6+x)).style.backgroundImage = 'url("/public/IMAGES/O.png")';
             document.getElementById("btn"+(6+x)).style.backgroundRepeat = "no-repeat";
             document.getElementById("btn"+(6+x)).style.backgroundPosition = "center";
             document.getElementById("btn"+(6+x)).style.value = '';
@@ -212,7 +212,7 @@ Wins = function () {
             return true;
 
         } else if (index[0 + x] == 2 && (index[0 + x] == index[6 + x]) && index[3 + x] == 0) {
-            document.getElementById("btn"+(3+x)).style.backgroundImage = 'url("../IMAGES/O.png")';
+            document.getElementById("btn"+(3+x)).style.backgroundImage = 'url("/public/IMAGES/O.png")';
             document.getElementById("btn"+(3+x)).style.backgroundRepeat = "no-repeat";
             document.getElementById("btn"+(3+x)).style.backgroundPosition = "center";
             document.getElementById("btn"+(3+x)).style.value = '';
@@ -222,7 +222,7 @@ Wins = function () {
             comp_win = true;
             return true;
         } else if (index[3 + x] == 2 && (index[3 + x] == index[6 + x]) && index[0 + x] == 0) {
-            document.getElementById("btn"+(0+x)).style.backgroundImage = 'url("../IMAGES/O.png")';
+            document.getElementById("btn"+(0+x)).style.backgroundImage = 'url("/public/IMAGES/O.png")';
             document.getElementById("btn"+(0+x)).style.backgroundRepeat = "no-repeat";
             document.getElementById("btn"+(0+x)).style.backgroundPosition = "center";
             document.getElementById("btn"+(0+x)).style.value = '';
@@ -237,7 +237,7 @@ Wins = function () {
 
     //*diagonal
     if (index[0] == 2 && (index[0] == index[4]) && index[8] == 0) {
-        document.getElementById("btn8").style.backgroundImage = 'url("../IMAGES/O.png")';
+        document.getElementById("btn8").style.backgroundImage = 'url("/public/IMAGES/O.png")';
         document.getElementById("btn8").style.backgroundRepeat = "no-repeat";
         document.getElementById("btn8").style.backgroundPosition = "center";
         document.getElementById("btn8").style.backgroundColor="purple";
@@ -247,7 +247,7 @@ Wins = function () {
         comp_win = true;
         return true;
     } else if (index[4] == 2 && (index[4] == index[8]) && index[0] == 0) {
-        document.getElementById("btn0").style.backgroundImage = 'url("../IMAGES/O.png")';
+        document.getElementById("btn0").style.backgroundImage = 'url("/public/IMAGES/O.png")';
         document.getElementById("btn0").style.backgroundRepeat = "no-repeat";
         document.getElementById("btn0").style.backgroundPosition = "center";
         document.getElementById("btn0").style.backgroundColor="purple";
@@ -257,7 +257,7 @@ Wins = function () {
         comp_win = true;
         return true;
     } else if (index[0] == 2 && (index[0] == index[8]) && index[4] == 0) {
-        document.getElementById("btn4").style.backgroundImage = 'url("../IMAGES/O.png")';
+        document.getElementById("btn4").style.backgroundImage = 'url("/public/IMAGES/O.png")';
         document.getElementById("btn4").style.backgroundRepeat = "no-repeat";
         document.getElementById("btn4").style.backgroundPosition = "center";
         document.getElementById("btn0").style.backgroundColor="purple";
@@ -270,7 +270,7 @@ Wins = function () {
 
     //*diagonal2
     if (index[2] == 2 && (index[2] == index[4]) && index[6] == 0) {
-        document.getElementById("btn6").style.backgroundImage = 'url("../IMAGES/O.png")';
+        document.getElementById("btn6").style.backgroundImage = 'url("/public/IMAGES/O.png")';
         document.getElementById("btn6").style.backgroundRepeat = "no-repeat";
         document.getElementById("btn6").style.backgroundPosition = "center";
         document.getElementById("btn6").style.backgroundColor="purple";
@@ -280,7 +280,7 @@ Wins = function () {
         comp_win = true;
         return true;
     } else if (index[4] == 2 && (index[4] == index[6]) && index[2] == 0) {
-        document.getElementById("btn2").style.backgroundImage = 'url("../IMAGES/O.png")';
+        document.getElementById("btn2").style.backgroundImage = 'url("/public/IMAGES/O.png")';
         document.getElementById("btn2").style.backgroundRepeat = "no-repeat";
         document.getElementById("btn2").style.backgroundPosition = "center";
         document.getElementById("btn2").style.backgroundColor="purple";
@@ -291,7 +291,7 @@ Wins = function () {
         comp_win = true;
         return true;
     } else if (index[2] == 2 && (index[2] == index[6]) && index[4] == 0) {
-        document.getElementById("btn4").style.backgroundImage = 'url("../IMAGES/O.png")';
+        document.getElementById("btn4").style.backgroundImage = 'url("/public/IMAGES/O.png")';
         document.getElementById("btn4").style.backgroundRepeat = "no-repeat";
         document.getElementById("btn4").style.backgroundPosition = "center";
         document.getElementById("btn4").style.backgroundColor="purple";
@@ -312,7 +312,7 @@ do_not_lose = () => {
 
         //*rowCheck
         if (index[0 + x] == 1 && (index[0 + x] == index[1 + x]) && index[2 + x] == 0) {
-            document.getElementById("btn"+(2+x)).style.backgroundImage = 'url("../IMAGES/O.png")';
+            document.getElementById("btn"+(2+x)).style.backgroundImage = 'url("/public/IMAGES/O.png")';
             document.getElementById("btn"+(2+x)).style.backgroundRepeat = "no-repeat";
             document.getElementById("btn"+(2+x)).style.backgroundPosition = "center";
             document.getElementById("btn"+(2+x)).style.value = '';
@@ -320,14 +320,14 @@ do_not_lose = () => {
             return true;
 
         } else if (index[0 + x] == 1 && (index[0 + x] == index[2 + x]) && index[1 + x] == 0) {
-            document.getElementById("btn"+(1+x)).style.backgroundImage = 'url("../IMAGES/O.png")';
+            document.getElementById("btn"+(1+x)).style.backgroundImage = 'url("/public/IMAGES/O.png")';
             document.getElementById("btn"+(1+x)).style.backgroundRepeat = "no-repeat";
             document.getElementById("btn"+(1+x)).style.backgroundPosition = "center";
             document.getElementById("btn"+(1+x)).style.value = '';
             index[x + 1] = 2;
             return true;
         } else if (index[1 + x] == 1 && (index[1 + x] == index[2 + x]) && index[0 + x] == 0) {
-            document.getElementById("btn"+(0+x)).style.backgroundImage = 'url("../IMAGES/O.png")';
+            document.getElementById("btn"+(0+x)).style.backgroundImage = 'url("/public/IMAGES/O.png")';
             document.getElementById("btn"+(0+x)).style.backgroundRepeat = "no-repeat";
             document.getElementById("btn"+(0+x)).style.backgroundPosition = "center";
             document.getElementById("btn"+(0+x)).style.value = '';
@@ -342,7 +342,7 @@ do_not_lose = () => {
     for (j = 0; j < 3; j++) {
         if (index[0 + x] == 1 && (index[0 + x] == index[3 + x]) && index[6 + x] == 0) {
 
-            document.getElementById("btn"+(6+x)).style.backgroundImage = 'url("../IMAGES/O.png")';
+            document.getElementById("btn"+(6+x)).style.backgroundImage = 'url("/public/IMAGES/O.png")';
             document.getElementById("btn"+(6+x)).style.backgroundRepeat = "no-repeat";
             document.getElementById("btn"+(6+x)).style.backgroundPosition = "center";
             document.getElementById("btn"+(6+x)).style.value = '';
@@ -350,14 +350,14 @@ do_not_lose = () => {
             return true;
 
         } else if (index[0 + x] == 1 && (index[0 + x] == index[6 + x]) && index[3 + x] == 0) {
-            document.getElementById("btn"+(3+x)).style.backgroundImage = 'url("../IMAGES/O.png")';
+            document.getElementById("btn"+(3+x)).style.backgroundImage = 'url("/public/IMAGES/O.png")';
             document.getElementById("btn"+(3+x)).style.backgroundRepeat = "no-repeat";
             document.getElementById("btn"+(3+x)).style.backgroundPosition = "center";
             document.getElementById("btn"+(3+x)).style.value = '';
             index[x + 3] = 2;
             return true;
         } else if (index[3 + x] == 1 && (index[3 + x] == index[6 + x]) && index[0 + x] == 0) {
-            document.getElementById("btn"+(0+x)).style.backgroundImage = 'url("../IMAGES/O.png")';
+            document.getElementById("btn"+(0+x)).style.backgroundImage = 'url("/public/IMAGES/O.png")';
             document.getElementById("btn"+(0+x)).style.backgroundRepeat = "no-repeat";
             document.getElementById("btn"+(0+x)).style.backgroundPosition = "center";
             document.getElementById("btn"+(0+x)).style.value = '';
@@ -369,21 +369,21 @@ do_not_lose = () => {
 
     //*diagona l
     if (index[0] == 1 && (index[0] == index[4]) && index[8] == 0) {
-        document.getElementById("btn8").style.backgroundImage = 'url("../IMAGES/O.png")';
+        document.getElementById("btn8").style.backgroundImage = 'url("/public/IMAGES/O.png")';
         document.getElementById("btn8").style.backgroundRepeat = "no-repeat";
         document.getElementById("btn8").style.backgroundPosition = "center";
         document.getElementById("btn8").style.value = '';
         index[8] = 2;
         return true;
     } else if (index[4] == 1 && (index[4] == index[8]) && index[0] == 0) {
-        document.getElementById("btn0").style.backgroundImage = 'url("../IMAGES/O.png")';
+        document.getElementById("btn0").style.backgroundImage = 'url("/public/IMAGES/O.png")';
         document.getElementById("btn0").style.backgroundRepeat = "no-repeat";
         document.getElementById("btn0").style.backgroundPosition = "center";
         document.getElementById("btn0").style.value = '';
         index[0] = 2;
         return true;
     } else if (index[0] == 1 && (index[0] == index[8]) && index[4] == 0) {
-        document.getElementById("btn4").style.backgroundImage = 'url("../IMAGES/O.png")';
+        document.getElementById("btn4").style.backgroundImage = 'url("/public/IMAGES/O.png")';
         document.getElementById("btn4").style.backgroundRepeat = "no-repeat";
         document.getElementById("btn4").style.backgroundPosition = "center";
         document.getElementById("btn4").style.value = '';
@@ -393,21 +393,21 @@ do_not_lose = () => {
 
     //*diagona 2
     if (index[2] == 1 && (index[2] == index[4]) && index[6] == 0) {
-        document.getElementById("btn6").style.backgroundImage = 'url("../IMAGES/O.png")';
+        document.getElementById("btn6").style.backgroundImage = 'url("/public/IMAGES/O.png")';
         document.getElementById("btn6").style.backgroundRepeat = "no-repeat";
         document.getElementById("btn6").style.backgroundPosition = "center";
         document.getElementById("btn6").style.value = '';
         index[6] = 2;
         return true;
     } else if (index[4] == 1 && (index[4] == index[6]) && index[2] == 0) {
-        document.getElementById("btn2").style.backgroundImage = 'url("../IMAGES/O.png")';
+        document.getElementById("btn2").style.backgroundImage = 'url("/public/IMAGES/O.png")';
         document.getElementById("btn2").style.backgroundRepeat = "no-repeat";
         document.getElementById("btn2").style.backgroundPosition = "center";
         document.getElementById("btn2").style.value = '';
         index[2] = 2;
         return true;
     } else if (index[2] == 1 && (index[2] == index[6]) && index[4] == 0) {
-        document.getElementById("btn4").style.backgroundImage = 'url("../IMAGES/O.png")';
+        document.getElementById("btn4").style.backgroundImage = 'url("/public/IMAGES/O.png")';
         document.getElementById("btn4").style.backgroundRepeat = "no-repeat";
         document.getElementById("btn4").style.backgroundPosition = "center";
         document.getElementById("btn4").style.value = '';
@@ -422,7 +422,7 @@ comp_play = () => {
         if (!do_not_lose()) {
              
             if (index[4] == 0) {
-                document.getElementById("btn4").style.backgroundImage = 'url("../IMAGES/O.png")';
+                document.getElementById("btn4").style.backgroundImage = 'url("/public/IMAGES/O.png")';
                 document.getElementById("btn4").style.backgroundRepeat = "no-repeat";
                 document.getElementById("btn4").style.backgroundPosition = "center";
                 document.getElementById("btn4").style.value = '';
@@ -431,7 +431,7 @@ comp_play = () => {
             }
             else if(index[4]==2 && ((index[0]==1 && index[8]==1) ))
             {
-                document.getElementById("btn6").style.backgroundImage = 'url("../IMAGES/O.png")';
+                document.getElementById("btn6").style.backgroundImage = 'url("/public/IMAGES/O.png")';
                 document.getElementById("btn6").style.backgroundRepeat = "no-repeat";
                 document.getElementById("btn6").style.backgroundPosition = "center";
                 document.getElementById("btn6").style.value = '';
@@ -448,7 +448,7 @@ comp_play = () => {
                     randomIndex = availableIndices[Math.floor(Math.random() * availableIndices.length)];
                 }
                 if (index[randomIndex] == 0) {
-                    document.getElementById("btn" + randomIndex).style.backgroundImage = 'url("../IMAGES/O.png")';
+                    document.getElementById("btn" + randomIndex).style.backgroundImage = 'url("/public/IMAGES/O.png")';
                     document.getElementById("btn" + randomIndex).style.backgroundRepeat = "no-repeat";
                     document.getElementById("btn" + randomIndex).style.backgroundPosition = "center";
                     document.getElementById("btn" + randomIndex).style.value = ''; // Ensure value is empty
@@ -456,7 +456,7 @@ comp_play = () => {
                 } else {
                     for (k = 0; k < 9; k++) {
                         if (index[k] == 0) {
-                            document.getElementById("btn" + randomIndex).style.backgroundImage = 'url("../IMAGES/O.png")';
+                            document.getElementById("btn" + randomIndex).style.backgroundImage = 'url("/public/IMAGES/O.png")';
                             document.getElementById("btn" + randomIndex).style.backgroundRepeat = "no-repeat";
                             document.getElementById("btn" + randomIndex).style.backgroundPosition = "center";
                             document.getElementById("btn" + randomIndex).style.value = '';
@@ -524,8 +524,8 @@ function play(btn, indx) {
             }
             switch (btn) {
                 case "btn0":
-                    // document.getElementById(btn).style.backgroundImage = 'url("..//IMAGES/X.png")';
-                    document.getElementById(btn).style.backgroundImage = 'url("../IMAGES/X.png")';
+                    // document.getElementById(btn).style.backgroundImage = 'url("/public//IMAGES/X.png")';
+                    document.getElementById(btn).style.backgroundImage = 'url("/public/IMAGES/X.png")';
                     document.getElementById(btn).style.backgroundRepeat = "no-repeat";
                     document.getElementById(btn).style.backgroundPosition = "center";
                     document.getElementById(btn).style.value = ''; // Ensure value is empty
@@ -535,7 +535,7 @@ function play(btn, indx) {
                     break;
 
                 case "btn1":
-                    document.getElementById(btn).style.backgroundImage = 'url("../IMAGES/X.png")';
+                    document.getElementById(btn).style.backgroundImage = 'url("/public/IMAGES/X.png")';
 
                     document.getElementById(btn).style.backgroundRepeat = "no-repeat";
                     document.getElementById(btn).style.backgroundPosition = "center";
@@ -547,7 +547,7 @@ function play(btn, indx) {
                     break
                 case "btn2":
 
-                    document.getElementById(btn).style.backgroundImage = 'url("../IMAGES/X.png")';
+                    document.getElementById(btn).style.backgroundImage = 'url("/public/IMAGES/X.png")';
 
                     document.getElementById(btn).style.backgroundRepeat = "no-repeat";
                     document.getElementById(btn).style.backgroundPosition = "center";
@@ -560,7 +560,7 @@ function play(btn, indx) {
                     break
                 case "btn3":
 
-                    document.getElementById(btn).style.backgroundImage = 'url("../IMAGES/X.png")';
+                    document.getElementById(btn).style.backgroundImage = 'url("/public/IMAGES/X.png")';
 
                     document.getElementById(btn).style.backgroundRepeat = "no-repeat";
                     document.getElementById(btn).style.backgroundPosition = "center";
@@ -572,7 +572,7 @@ function play(btn, indx) {
                     break
                 case "btn4":
 
-                    document.getElementById(btn).style.backgroundImage = 'url("../IMAGES/X.png")';
+                    document.getElementById(btn).style.backgroundImage = 'url("/public/IMAGES/X.png")';
 
                     document.getElementById(btn).style.backgroundRepeat = "no-repeat";
                     document.getElementById(btn).style.backgroundPosition = "center";
@@ -584,7 +584,7 @@ function play(btn, indx) {
                     break
                 case "btn5":
 
-                    document.getElementById(btn).style.backgroundImage = 'url("../IMAGES/X.png")';
+                    document.getElementById(btn).style.backgroundImage = 'url("/public/IMAGES/X.png")';
 
                     document.getElementById(btn).style.backgroundRepeat = "no-repeat";
                     document.getElementById(btn).style.backgroundPosition = "center";
@@ -596,7 +596,7 @@ function play(btn, indx) {
                     break
                 case "btn6":
 
-                    document.getElementById(btn).style.backgroundImage = 'url("../IMAGES/X.png")';
+                    document.getElementById(btn).style.backgroundImage = 'url("/public/IMAGES/X.png")';
 
                     document.getElementById(btn).style.backgroundRepeat = "no-repeat";
                     document.getElementById(btn).style.backgroundPosition = "center";
@@ -606,7 +606,7 @@ function play(btn, indx) {
                     comp_play();
                     break
                 case "btn7":
-                    document.getElementById(btn).style.backgroundImage = 'url("../IMAGES/X.png")';
+                    document.getElementById(btn).style.backgroundImage = 'url("/public/IMAGES/X.png")';
 
                     document.getElementById(btn).style.backgroundRepeat = "no-repeat";
                     document.getElementById(btn).style.backgroundPosition = "center";
@@ -617,7 +617,7 @@ function play(btn, indx) {
                     break
                 case "btn8":
 
-                    document.getElementById(btn).style.backgroundImage = 'url("../IMAGES/X.png")';
+                    document.getElementById(btn).style.backgroundImage = 'url("/public/IMAGES/X.png")';
 
                     document.getElementById(btn).style.backgroundRepeat = "no-repeat";
                     document.getElementById(btn).style.backgroundPosition = "center";
